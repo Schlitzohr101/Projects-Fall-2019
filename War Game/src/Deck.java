@@ -1,12 +1,23 @@
 import java.util.*;
 
-
+/**
+ * 
+ * @author MLMin
+ *
+ */
 public class Deck extends Card{
+	/**
+	 * 
+	 * @param rank
+	 * @param suit
+	 */
 	public Deck(int rank, int suit) {
 		super(rank, suit);
 		// TODO Auto-generated constructor stub
 	}
-
+/**
+ * 
+ */
 	public void newDeck() {
 	List<Card> newDeck = new ArrayList<Card>(); 
 	/**

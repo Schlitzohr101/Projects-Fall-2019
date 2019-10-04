@@ -8,7 +8,9 @@ import java.util.*;
 public class War {
 	public static void main(String[] Args) {
 
-		
+		/**
+		 * 
+		 */
 		List<Card> freshDeck = new ArrayList<Card>(); 
 		/**
 		 * Build the deck
@@ -81,7 +83,7 @@ public class War {
 		int tie = 0;
 		int index = 2;
 		while (tie != 1) {
-		for(int x=0; x<3; x++){
+		for(int x=0; x<4; x++){
 		
 		if(hand1.size() == 0 || hand2.size() == 0 ){   
 			System.out.println("Someone is outta cards!\n");
@@ -94,15 +96,15 @@ public class War {
 		war1.add(hand1.pop()); 
 		war2.add(hand2.pop());   
 	}
-		  
+
 		
 		if(war1.size() >= 3 && war2.size() >= 3 ){
 		
-		System.out.println("War card for player1 is " + war1.get(0).toString());
-		System.out.println("War card for player2 is " + war2.get(0).toString());
+		System.out.println("War card for the human is " + war1.get(0).toString());
+		System.out.println("War card for the computer is " + war2.get(0).toString());
 		  
 		if(war1.get(index).getCard() == war2.get(index).getCard()) {
-			index += 3;
+			index += 4;
 			tie = 0;
 		}
 		
@@ -110,6 +112,7 @@ public class War {
 		hand1.addAll(war1); 
 		hand1.addAll(war2);
 		System.out.println("Human wins this round\n");
+
 		tie = 1;
 		
 		

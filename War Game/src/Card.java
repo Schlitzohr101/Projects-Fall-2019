@@ -1,18 +1,26 @@
-
+/**
+ * 
+ * @author MLMin
+ *
+ */
 public class Card {
 
 	private int rank;
 	private int suit;
-	
+	/**
+	 * 
+	 * @param rank
+	 * @param suit
+	 */
 	public Card(int rank, int suit) {
 	this.rank = rank;
 	this.suit = suit;
 	}
-	/**
-	 * 
-	 * @param r
-	 */
-	
+
+/**
+ * 	
+ * @return
+ */
 	public int getCard() {	
 		return rank;
 	}
