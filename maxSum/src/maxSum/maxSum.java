@@ -121,15 +121,15 @@ i++;
 }
 int l =0;
 int r = array.size() - 1;
-int algorithm1 = stupidFreshmen(n, array);
-int algorithm2 = slightlyLessStupidSophomore(n, array);
-int algorithm3 = gettingSmarterJunior(array, l, r);
-int algorithm4 = superSmartSenior(array);
+int algorithmOne = stupidFreshmen(n, array);
+int algorithmTwo = slightlyLessStupidSophomore(n, array);
+int algorithmThree = gettingSmarterJunior(array, l, r);
+int algorithmFour = superSmartSenior(array);
 
-System.out.println("Your stupid sum 1 is " + algorithm1);
-System.out.println("Your stupid sum 2 is " + algorithm2);
-System.out.println("Your stupid sum 3 is " + algorithm3);
-System.out.println("Your stupid sum 4 is " + algorithm4);
+System.out.println("Your stupid sum 1 is " + algorithmOne);
+System.out.println("Your stupid sum 2 is " + algorithmTwo);
+System.out.println("Your stupid sum 3 is " + algorithmThree);
+System.out.println("Your stupid sum 4 is " + algorithmFour);
 		}
 	break;
 	
@@ -164,40 +164,40 @@ System.out.println("Your stupid sum 4 is " + algorithm4);
 					{ 
 
 						long start = System.currentTimeMillis();
-						int algorithm1 = stupidFreshmen(n, array);
+						int algorithmOne = stupidFreshmen(n, array);
 						long end = System.currentTimeMillis();
 						System.out.println("Your time is " + (end - start) + " milli seconds");						
-						System.out.println("Your stupid sum 1 is " + algorithm1);
+						System.out.println("Your stupid sum 1 is " + algorithmOne);
 					}
 				break;
 				
 					case '2':
 					{	
 						long start = System.currentTimeMillis();						
-						int algorithm2 = slightlyLessStupidSophomore(n, array);
+						int algorithmTwo = slightlyLessStupidSophomore(n, array);
 						long end = System.currentTimeMillis();						
 						System.out.println("Your time is " + (end - start) + " milli seconds");	
-						System.out.println("Your stupid sum 2 is " + algorithm2);
+						System.out.println("Your stupid sum 2 is " + algorithmTwo);
 					}
 				break;
 					
 					case '3':
 					{
 						long start = System.nanoTime();						
-						int algorithm3 = gettingSmarterJunior(array, l, r);
+						int algorithmThree = gettingSmarterJunior(array, l, r);
 						long end = System.nanoTime();						
 						System.out.println("Your time is " + ((end - start)) + " nano seconds!!!");	
-						System.out.println("Your stupid sum 3 is " + algorithm3);					
+						System.out.println("Your stupid sum 3 is " + algorithmThree);					
 					}
 				break;
 				
 					case '4':
 					{
 						long start = System.nanoTime();					
-						int algorithm4 = superSmartSenior(array);
+						int algorithmFour = superSmartSenior(array);
 						long end = System.nanoTime();						
 						System.out.println("Your time is " + (end - start) + " nano seconds!!!");	
-						System.out.println("Your stupid sum 4 is " + algorithm4);
+						System.out.println("Your stupid sum 4 is " + algorithmFour);
 					}	
 				break;
 				}
@@ -247,14 +247,14 @@ System.out.println("Your stupid sum 4 is " + algorithm4);
 					case 1:
 					{ 
 						long start = System.currentTimeMillis();
-						int algorithm1 = stupidFreshmen(m, array);
+						int algorithmOne = stupidFreshmen(m, array);
 						long end1 = System.currentTimeMillis();
 						System.out.println((end1-start));
 						long prediction = (long)((end1-start) * (Math.pow(n, 3)/Math.pow(m, 3)));
 						System.out.println("Your time should be: " + prediction);
 						
 						start = System.currentTimeMillis();
-						algorithm1 = stupidFreshmen(n, arraySecond);
+						algorithmOne = stupidFreshmen(n, arraySecond);
 						long end = System.currentTimeMillis();
 						System.out.println("Your time is " + (end - start) + " milli seconds");						
 
@@ -264,14 +264,14 @@ System.out.println("Your stupid sum 4 is " + algorithm4);
 					case 2:
 					{	
 						long start = System.currentTimeMillis();
-						int algorithm2 = slightlyLessStupidSophomore(m, array);
+						int algorithmTwo = slightlyLessStupidSophomore(m, array);
 						long end1 = System.currentTimeMillis();
 						
 						long prediction = ((end1-start) * (long)(Math.pow(n, 2)/Math.pow(m, 2)));
 						System.out.println("Your time should be: " + prediction);
 						
 						start = System.currentTimeMillis();						
-						algorithm2 = slightlyLessStupidSophomore(n, arraySecond);
+						algorithmTwo = slightlyLessStupidSophomore(n, arraySecond);
 						long end = System.currentTimeMillis();						
 						System.out.println("Your actual time is " + (end - start) + " milli seconds");	
 						
@@ -281,14 +281,14 @@ System.out.println("Your stupid sum 4 is " + algorithm4);
 					case 3:
 					{
 						long start = System.nanoTime();
-						int algorithm3 = gettingSmarterJunior(array, l, r);
+						int algorithmThree = gettingSmarterJunior(array, l, r);
 						long end1 = System.nanoTime();
 						
 						long prediction = ((end1-start) * (long)((Math.log(n)/Math.log(2))/(Math.log(m)/Math.log(2))));
 						System.out.println("Your time should be: " + prediction);
 						
 						start = System.nanoTime();					
-						algorithm3 = gettingSmarterJunior(arraySecond, lSecond, rSecond);
+						algorithmThree = gettingSmarterJunior(arraySecond, lSecond, rSecond);
 						long end = System.nanoTime();						
 						System.out.println("Your actual time is " + ((end - start)) + " nano seconds!!!");	
 											
@@ -298,14 +298,14 @@ System.out.println("Your stupid sum 4 is " + algorithm4);
 					case 4:
 					{
 						long start = System.nanoTime();
-						int algorithm4 = superSmartSenior(array);
+						int algorithmFour = superSmartSenior(array);
 						long end1 = System.nanoTime();
 						
 						long prediction = ((end1-start) * (long)(n/m));
 						System.out.println("Your time should be: " + prediction);
 						
 						start = System.nanoTime();					
-						algorithm4 = superSmartSenior(arraySecond);
+						algorithmFour = superSmartSenior(arraySecond);
 						long end = System.nanoTime();						
 						System.out.println("Your time is " + (end - start) + " nano seconds!!!");	
 
